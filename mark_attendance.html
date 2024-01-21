@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mark Attendance</title>
+    <script>
+
+        // Use getUserMedia to access webcam and display video
+navigator.mediaDevices.getUserMedia({ video: true })
+.then(stream => {
+    const webcam = document.getElementById('webcam');
+    webcam.srcObject = stream;
+})
+.catch(error => {
+    console.error('Error accessing webcam:', error);
+});
+
+// Detect faces and mark attendance when a face is recognized
+webcam.addEventListener('play', () => {
+const canvas = faceapi.createCanvasFromMedia(webcam);
+document.body.append(canvas);
+const displaySize = { width: webcam.width, height: webcam.height };
+faceapi.matchDimensions(canvas, displaySize);
+
+setInterval(async () => {
+    const detections = await faceapi.detectAllFaces(webcam,
+        new faceapi.TinyFaceDetectorOptions()).withFaceLandmarks().withFaceDescriptors();
+    
+    // Process detections and recognized faces
+    // Send a POST request to the API endpoint to mark attendance
+    // You'll need to extract the recognized face ID and send it in the request
+    
+}, 1000);  // Perform face detection every second
+});
+
+    </script>
+</head>
+<body>
+    <h1>Mark Attendance</h1>
+    <video id="webcam" autoplay></video>
+    <form method="POST">
+        <label for="face_id">Face ID:</label>
+        <input type="text" id="face_id" name="face_id" required>
+        <button type="submit">Mark Attendance</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,520 @@
+/* Add your CSS styles here */
+/* Example styles for canvas */
+#analysisChart {
+    max-width: 800px;
+    margin: 20px auto;
+    display: block;
+  }
+  /* Add your CSS styles here */
+/* Example styles for button */
+#generateReportButton {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  /* Add your CSS styles here */
+/* Example styles for form layout */
+#attendanceForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  /* Add your CSS styles here */
+/* Example styles for form layout */
+#memberForm {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  /* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Navigation links */
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
+
+  /* Apply styles to headings */
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Style form fields */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style flash messages */
+ul.messages {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+ul.messages li {
+  color: #007bff;
+}
+
+/* Add more styles as needed */
+
+/* Apply styles to headings */
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+/* Style form container */
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style form fields */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Style flash messages */
+ul.messages {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+}
+
+ul.messages li {
+  color: #007bff;
+}
+
+/* Add more styles as needed */
+
+  
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  /* styles.css */
+
+/* Shared Button Styling */
+.button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Shared Heading Styling */
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+/* styles.css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive Table Styling */
+
+@media (max-width: 600px) {
+  table {
+      font-size: 14px;
+  }
+  th, td {
+      padding: 8px;
+  }
+}
+/* styles.css */
+
+form {
+  width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input[type="date"],
+input[type="text"],
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: border-color 0.2s;
+}
+
+input[type="date"]:focus,
+input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* styles.css */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+/* styles.css */
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="date"],
+input[type="text"],
+button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* styles.css */
+
+/* Pagination Styling */
+
+.pagination {
+  margin-top: 15px;
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination li {
+  margin: 0 5px;
+}
+
+.pagination a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #007bff;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  transition: background-color 0.2s;
+}
+
+.pagination a:hover {
+  background-color: #f2f2f2;
+}
+/* styles.css */
+
+/* Table Styling */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+thead th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+  
+/* styles.css */
+
+/* Alert Styling */
+
+.alert {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+  border-color: #c3e6cb;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+  border-color: #f5c6cb;
+}
+
+/* Customize alert styles based on your design */
+/* styles.css */
+
+/* Button Styling */
+
+.button-primary {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-secondary {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button-primary:hover, .button-secondary:hover {
+  background-color: #0056b3;
+}
+
+/* Customize button styles as needed */
+/* styles.css */
+
+/* Heading Styling */
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+/* You can customize heading styles further */
+/* styles.css */
+
+/* Form Styling */
+
+form {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="text"], input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Add more specific styling for other input types if needed */

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View Attendance Analysis</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="scripts.js"></script>
+  <!-- Import Chart.js for rendering charts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>View Attendance Analysis</h1>
+  </div>
+  <div class="container">
+    <h2>Attendance Analysis</h2>
+    <canvas id="analysisChart"></canvas>
+  </div>
+
+
+<!-- analysis.html -->
+
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <h1 class="heading">Attendance Analysis</h1>
+    
+    <h2>Attendance Percentage</h2>
+    <p>Weekly Attendance: {{ weekly_attendance_percentage }}%</p>
+    <p>Monthly Attendance: {{ monthly_attendance_percentage }}%</p>
+    
+    <h2>Attendance Trends</h2>
+    <canvas id="attendance-chart"></canvas>
+</div>
+<script>
+var trends : {}
+var dates = trends.map(function(entry) { return entry.date; });
+var attendanceData = trends.map(function(entry) { return entry.attendance; });
+
+var ctx = document.getElementById('attendance-chart').getContext('2d');
+var myChart = new Chart(ctx, {
+    type: 'line',
+    data: {
+        labels: dates,
+        datasets: [{
+            label: 'Attendance',
+            data: attendanceData,
+            borderColor: '#007bff',
+            backgroundColor: 'rgba(0, 123, 255, 0.1)',
+            borderWidth: 2
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true,
+                max: Math.max(...attendanceData) + 1
+            }
+        }
+    }
+});
+</script>
+{% endblock %}
+
+</body>
+</html>

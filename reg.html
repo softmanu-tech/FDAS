@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Register Member</title>
+<style>
+    /* Add the following styles to your existing styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.header {
+    background: url('header-logo.jpg') no-repeat center;
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+    color: #fff;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.registration-form {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.registration-form h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.registration-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.registration-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.registration-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.registered-members {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 80%;
+    max-width: 800px;
+}
+
+.registered-members h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+</style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="Logo">
+        </div>
+        <h1>REPENTANCE AND HOLINESS GITHURAI 45 MAIN ALTAR</h1>
+    </div>
+
+    <div class="registration-form">
+        <h2>Register New Member</h2>
+        <form action="memb.html" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <label for="residence">Residence:</label>
+            <input type="text" id="residence" name="residence" required><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required><br>
+
+            <label for="fellowship">Home Fellowship:</label>
+            <input type="text" id="fellowship" name="fellowship" required><br>
+
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required><br>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>

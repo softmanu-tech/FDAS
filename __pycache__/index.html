@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        /* Reset default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color and font for the body */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Navigation menu styles */
+nav {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.chart-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #444;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 768px) {
+    nav ul li {
+        margin-right: 10px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Attendance Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="register.html">Register Member</a></li>
+            <li><a href="mark_attendance.html">Mark Attendance</a></li>
+            <li><a href="view_reports.html">View Reports</a></li>
+            <li> <p><a href="register.html">Register New Member</a></p></li>
+            <!-- Add more navigation links as needed -->
+        </ul>
+    </nav>
+    <main>
+        
+        <div class="chart-container">
+            <canvas id="attendanceChart"></canvas>
+             <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Attendance Management System. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

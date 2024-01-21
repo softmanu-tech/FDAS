@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mark Attendance</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="scripts.js"></script>
+</head>
+<body>
+  <div class="header">
+    <h1>Mark Attendance</h1>
+  </div>
+  <div class="container">
+    <h2>Mark Attendance</h2>
+    <form id="attendanceForm">
+      <label for="face_id">Face ID:</label>
+      <input type="text" id="face_id" name="face_id" required><br><br>
+
+      <button type="button" id="markAttendanceButton" onclick="markAttendance()">Mark Attendance</button>
+    </form>
+    <div id="attendanceMessage"></div>
+  </div>
+</body>
+</html>
